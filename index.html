@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Duct & Dryer Vent Cleaning | Northern Virginia | Nature Airduct</title>
+  <meta name="description" content="Professional air duct cleaning ($199) and dryer vent cleaning ($99) in Northern Virginia. Money-back guarantee. Open 7 days. Call (571) 984-1525.">
+  <meta property="og:title" content="Nature Airduct — Air Duct & Dryer Vent Cleaning in Northern Virginia">
+  <meta property="og:description" content="Whole-home air duct cleaning starting at $199 with before & after photos and a money-back guarantee. Serving Fairfax, Reston, Alexandria & more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://natureairduct.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-green': '#1A531A',
+            'brand-green-dark': '#143F14',
+            'brand-green-light': '#2D6E2D',
+            'brand-blue': '#7DD3F7',
+            'brand-blue-light': '#F0F9FF',
+            'brand-charcoal': '#333333',
+          },
+          fontFamily: {
+            'display': ['"DM Serif Display"', 'serif'],
+            'body': ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    /* SVG noise texture for depth */
+    .noise-texture::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1;
+    }
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+    /* Spring transition helper */
+    .spring-transition {
+      transition-property: transform, opacity;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    /* Focus ring */
+    .focus-ring:focus-visible {
+      outline: 2px solid #7DD3F7;
+      outline-offset: 2px;
+    }
+  </style>
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nature Airduct",
+    "description": "Professional air duct and dryer vent cleaning services in Northern Virginia.",
+    "telephone": "+1-571-984-1525",
+    "email": "info@natureairduct.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "11001 Freedom Dr",
+      "addressLocality": "Reston",
+      "addressRegion": "VA",
+      "postalCode": "20190",
+      "addressCountry": "US"
+    },
+    "openingHours": "Mo-Su 08:00-20:00",
+    "areaServed": ["Fairfax", "Alexandria", "Annandale", "Chantilly", "Centreville", "Dale City", "Falls Church", "Herndon", "Lorton", "Manassas", "Reston", "Springfield", "Vienna", "Woodbridge"],
+    "priceRange": "$99-$280",
+    "url": "https://natureairduct.com"
+  }
+  </script>
+</head>
+<body class="font-body text-brand-charcoal bg-white antialiased">
+
+  <!-- ============================================ -->
+  <!-- 1. STICKY HEADER                             -->
+  <!-- ============================================ -->
+  <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm" style="box-shadow: 0 2px 8px rgba(26,83,26,0.10), 0 8px 24px rgba(26,83,26,0.08);">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 sm:h-20">
+      <!-- Logo: mobile -->
+      <a href="/" class="focus-ring rounded-lg sm:hidden">
+        <img src="brand-assets/NatureAirductLogoMobile.svg" alt="Nature Airduct" class="h-14 w-auto">
+      </a>
+      <!-- Logo: desktop -->
+      <a href="/" class="focus-ring rounded-lg hidden sm:block">
+        <img src="brand-assets/NatureAirductLogoWeb.svg" alt="Nature Airduct" class="h-16 w-auto">
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#services" class="text-sm font-medium text-brand-charcoal hover:text-brand-green spring-transition focus-ring rounded px-1 py-0.5">Services</a>
+        <a href="#why-us" class="text-sm font-medium text-brand-charcoal hover:text-brand-green spring-transition focus-ring rounded px-1 py-0.5">Why Us</a>
+        <a href="#area" class="text-sm font-medium text-brand-charcoal hover:text-brand-green spring-transition focus-ring rounded px-1 py-0.5">Service Area</a>
+        <a href="#reviews" class="text-sm font-medium text-brand-charcoal hover:text-brand-green spring-transition focus-ring rounded px-1 py-0.5">Reviews</a>
+        <a href="#contact" class="text-sm font-medium text-brand-charcoal hover:text-brand-green spring-transition focus-ring rounded px-1 py-0.5">Contact</a>
+      </nav>
+
+      <!-- Phone CTA + Hamburger -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+15719841525" class="focus-ring inline-flex items-center gap-2 bg-brand-green text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-brand-green-dark active:scale-95 spring-transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          <span class="hidden sm:inline">(571) 984-1525</span>
+          <span class="sm:hidden">Call</span>
+        </a>
+        <!-- Hamburger -->
+        <button id="menu-toggle" class="md:hidden focus-ring rounded-lg p-2 text-brand-charcoal hover:text-brand-green spring-transition" aria-label="Open menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pb-4">
+      <nav class="flex flex-col gap-1 pt-2">
+        <a href="#services" class="mobile-nav-link text-sm font-medium text-brand-charcoal hover:text-brand-green hover:bg-brand-blue-light rounded-lg px-3 py-2.5 spring-transition focus-ring">Services & Pricing</a>
+        <a href="#why-us" class="mobile-nav-link text-sm font-medium text-brand-charcoal hover:text-brand-green hover:bg-brand-blue-light rounded-lg px-3 py-2.5 spring-transition focus-ring">Why Choose Us</a>
+        <a href="#area" class="mobile-nav-link text-sm font-medium text-brand-charcoal hover:text-brand-green hover:bg-brand-blue-light rounded-lg px-3 py-2.5 spring-transition focus-ring">Service Area</a>
+        <a href="#reviews" class="mobile-nav-link text-sm font-medium text-brand-charcoal hover:text-brand-green hover:bg-brand-blue-light rounded-lg px-3 py-2.5 spring-transition focus-ring">Reviews</a>
+        <a href="#contact" class="mobile-nav-link text-sm font-medium text-brand-charcoal hover:text-brand-green hover:bg-brand-blue-light rounded-lg px-3 py-2.5 spring-transition focus-ring">Schedule Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================ -->
+    <!-- 2. HERO SECTION                              -->
+    <!-- ============================================ -->
+    <section class="relative pt-24 sm:pt-32 pb-16 sm:pb-24 overflow-hidden noise-texture">
+      <!-- Background gradient layers -->
+      <div class="absolute inset-0" style="background: radial-gradient(ellipse at 20% 80%, rgba(26,83,26,0.07) 0%, transparent 55%), radial-gradient(ellipse at 80% 20%, rgba(125,211,247,0.08) 0%, transparent 50%), radial-gradient(ellipse at 50% 0%, rgba(26,83,26,0.03) 0%, transparent 70%);"></div>
+      <!-- Decorative top accent bar -->
+      <div class="absolute top-16 sm:top-20 left-0 right-0 h-1" style="background: linear-gradient(90deg, transparent, #1A531A, #7DD3F7, transparent);opacity:0.15;"></div>
+
+      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl mx-auto text-center">
+          <!-- Small airflow icon above headline -->
+          <div class="inline-flex items-center gap-2 bg-brand-green/5 border border-brand-green/10 text-brand-green text-sm font-medium px-4 py-1.5 rounded-full mb-6">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+            Northern Virginia's Trusted Cleaning Service
+          </div>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl text-brand-green leading-tight" style="letter-spacing: -0.03em;">
+            Breathe Cleaner Air.<br>Live Healthier.
+          </h1>
+          <p class="mt-6 text-lg sm:text-xl text-brand-charcoal/80 leading-relaxed max-w-2xl mx-auto" style="line-height: 1.7;">
+            Professional air duct and dryer vent cleaning for Northern Virginia homes. Starting at $199 with before &amp; after photos and a money-back guarantee.
+          </p>
+
+          <!-- CTAs -->
+          <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="tel:+15719841525" class="focus-ring w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-green text-white text-lg font-semibold px-8 py-4 rounded-lg hover:bg-brand-green-dark active:scale-95 spring-transition" style="box-shadow: 0 4px 12px rgba(26,83,26,0.25);">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              Call (571) 984-1525
+            </a>
+            <a href="#contact" class="focus-ring w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-brand-green text-brand-green text-lg font-semibold px-8 py-4 rounded-lg hover:bg-brand-green hover:text-white active:scale-95 spring-transition">
+              Schedule Service
+            </a>
+          </div>
+
+          <!-- Trust badges -->
+          <div class="mt-10 flex flex-wrap items-center justify-center gap-6 sm:gap-8">
+            <div class="flex items-center gap-2 text-sm text-brand-charcoal/70">
+              <svg class="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Money-Back Guarantee
+            </div>
+            <div class="flex items-center gap-2 text-sm text-brand-charcoal/70">
+              <svg class="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"/><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"/></svg>
+              Before &amp; After Photos
+            </div>
+            <div class="flex items-center gap-2 text-sm text-brand-charcoal/70">
+              <svg class="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Open 7 Days a Week
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 2b. DUST STAT CALLOUT STRIP                  -->
+    <!-- ============================================ -->
+    <div class="bg-brand-green py-10 sm:py-12 relative overflow-hidden">
+      <!-- Subtle radial glow -->
+      <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.06) 0%, transparent 70%);"></div>
+      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
+        <!-- Central stat -->
+        <div class="text-center mb-8 sm:mb-10">
+          <p class="text-white/60 text-sm font-medium uppercase tracking-widest mb-3">Did You Know?</p>
+          <p class="font-display text-3xl sm:text-4xl lg:text-5xl text-white" style="letter-spacing: -0.02em;">The average home accumulates <span class="text-brand-blue">45 lbs</span> of dust</p>
+          <p class="font-display text-3xl sm:text-4xl lg:text-5xl text-white" style="letter-spacing: -0.02em;">in its air ducts every year.</p>
+        </div>
+        <!-- Supporting stats row -->
+        <div class="grid sm:grid-cols-3 gap-6 sm:gap-8 border-t border-white/10 pt-8">
+          <div class="text-center">
+            <p class="text-2xl font-bold text-brand-blue mb-1">2–5×</p>
+            <p class="text-sm text-white/70" style="line-height: 1.6;">Indoor air can be 2–5× more polluted than outdoor air, according to the EPA.</p>
+          </div>
+          <div class="text-center">
+            <p class="text-2xl font-bold text-brand-blue mb-1">5+ Years</p>
+            <p class="text-sm text-white/70" style="line-height: 1.6;">Most home air ducts haven't been professionally cleaned in over 5 years.</p>
+          </div>
+          <div class="text-center">
+            <p class="text-2xl font-bold text-brand-blue mb-1">$199</p>
+            <p class="text-sm text-white/70" style="line-height: 1.6;">One cleaning. All vents. Money-back guarantee. Most homes need it once every 3–5 years.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- 3. SERVICES & PRICING                        -->
+    <!-- ============================================ -->
+    <section id="services" class="py-16 sm:py-24 bg-brand-blue-light relative noise-texture">
+      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+          <h2 class="font-display text-3xl sm:text-4xl text-brand-green" style="letter-spacing: -0.03em;">Our Services &amp; Pricing</h2>
+          <p class="mt-4 text-brand-charcoal/70 text-lg max-w-xl mx-auto" style="line-height: 1.7;">Transparent pricing. No hidden fees. Know exactly what you're paying before we start.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+          <!-- Air Duct Cleaning -->
+          <div class="bg-white rounded-xl p-6 sm:p-8 flex flex-col" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 4px 12px rgba(26,83,26,0.06);">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-brand-green/10 flex items-center justify-center">
+                <svg class="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+              </div>
+              <h3 class="font-display text-xl text-brand-green">Air Duct Cleaning</h3>
+            </div>
+            <div class="mb-6">
+              <span class="text-4xl font-bold text-brand-charcoal">$199</span>
+              <span class="text-brand-charcoal/60 text-sm ml-1">whole home</span>
+            </div>
+            <ul class="space-y-3 mb-8 flex-grow">
+              <li class="flex items-start gap-2 text-sm text-brand-charcoal/80">
+                <svg class="w-4 h-4 text-brand-green mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Complete air duct system cleaning
+              </li>
+              <li class="flex items-start gap-2 text-sm text-brand-charcoal/80">
+                <svg class="w-4 h-4 text-brand-green mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Unlimited supply vents &amp; main lines
+              </li>
+              <li class="flex items-start gap-2 text-sm text-brand-charcoal/80">
+                <svg class="w-4 h-4 text-brand-green mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Before &amp; after photo proof
+              </li>
+              <li class="flex items-start gap-2 text-sm text-brand-charcoal/80">
+                <svg class="w-4 h-4 text-brand-green mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Money-back guarantee
+              </li>
+            </ul>
+            <a href="tel:+15719841525" class="focus-ring w-full inline-flex items-center justify-center bg-brand-green text-white font-semibold px-6 py-3 rounded-lg hover:bg-brand-green-dark active:scale-95 spring-transition" style="box-shadow: 0 2px 8px rgba(26,83,26,0.2);">
+              Book Now
+            </a>
+          </div>
+
+          <!-- Best Value Bundle -->
+          <div class="rounded-xl p-6 sm:p-8 flex flex-col relative ring-2 ring-brand-green scale-[1.03] z-10" style="background: linear-gradient(135deg, #f0faf0 0%, #ffffff 60%); box-shadow: 0 4px 12px rgba(26,83,26,0.12), 0 12px 32px rgba(26,83,26,0.14), 0 24px 48px rgba(26,83,26,0.10);">
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2">
+              <span class="inline-flex items-center gap-1 bg-brand-green text-white text-xs font-bold uppercase tracking-wide px-4 py-1.5 rounded-full" style="box-shadow: 0 2px 8px rgba(26,83,26,0.3);">
+                Best Value
+              </span>
+            </div>
+            <div class="flex items-center gap-3 mb-4 mt-2">
+              <div class="w-10 h-10 rounded-lg bg-brand-green/10 flex items-center justify-center">
+                <svg class="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
+              </div>
+              <h3 class="font-display text-xl text-brand-green">Complete Bundle</h3>
+            </div>
+            <div class="mb-2">
+              <span class="text-4xl font-bold text-brand-charcoal">$280</span>
+              <span class="text-brand-charcoal/60 text-sm ml-1">both services</span>
+            </div>
+            <p class="text-sm text-brand-green font-semibold mb-6">Save $18 vs. booking separately</p>
+            <ul class="space-y-3 mb-8 flex-grow">
+              <li class="flex items-start gap-2 text-sm text-brand-charcoal/80">
+                <svg class="w-4 h-4 text-brand-green mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Everything in Air Duct Cleaning
+              </li>
+              <li class="flex items-start gap-2 text-sm text-brand-charcoal/80">
+                <svg class="w-4 h-4 text-brand-green mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Everything in Dryer Vent Cleaning
+              </li>
+              <li class="flex items-start gap-2 text-sm text-brand-charcoal/80">
+                <svg class="w-4 h-4 text-brand-green mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Full safety inspection
+              </li>
+              <li class="flex items-start gap-2 text-sm text-brand-charcoal/80">
+                <svg class="w-4 h-4 text-brand-green mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                One appointment, complete clean
+              </li>
+            </ul>
+            <a href="tel:+15719841525" class="focus-ring w-full inline-flex items-center justify-center bg-brand-green text-white font-semibold px-6 py-3 rounded-lg hover:bg-brand-green-dark active:scale-95 spring-transition" style="box-shadow: 0 2px 8px rgba(26,83,26,0.2);">
+              Book Bundle
+            </a>
+          </div>
+
+          <!-- Dryer Vent Cleaning -->
+          <div class="bg-white rounded-xl p-6 sm:p-8 flex flex-col" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 4px 12px rgba(26,83,26,0.06);">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-brand-green/10 flex items-center justify-center">
+                <svg class="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 6.75 6.75 0 009 4.5a.75.75 0 01.75.75c0 .896.393 1.7 1.016 2.25 1.463-1.463 3.066-2.461 4.596-3.286z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9A3.75 3.75 0 1112 16.5a.75.75 0 01-.75-.75c0-1.244.607-2.348 1.54-3.032A3.73 3.73 0 0015.75 9z"/></svg>
+              </div>
+              <h3 class="font-display text-xl text-brand-green">Dryer Vent Cleaning</h3>
+            </div>
+            <div class="mb-6">
+              <span class="text-4xl font-bold text-brand-charcoal">$99</span>
+              <span class="text-brand-charcoal/60 text-sm ml-1">per dryer</span>
+            </div>
+            <ul class="space-y-3 mb-8 flex-grow">
+              <li class="flex items-start gap-2 text-sm text-brand-charcoal/80">
+                <svg class="w-4 h-4 text-brand-green mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Full brushing &amp; vacuuming
+              </li>
+              <li class="flex items-start gap-2 text-sm text-brand-charcoal/80">
+                <svg class="w-4 h-4 text-brand-green mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Safety inspection included
+              </li>
+              <li class="flex items-start gap-2 text-sm text-brand-charcoal/80">
+                <svg class="w-4 h-4 text-brand-green mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Before &amp; after photo proof
+              </li>
+              <li class="flex items-start gap-2 text-sm text-brand-charcoal/80">
+                <svg class="w-4 h-4 text-brand-green mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Reduces fire hazard risk
+              </li>
+            </ul>
+            <a href="tel:+15719841525" class="focus-ring w-full inline-flex items-center justify-center bg-brand-green text-white font-semibold px-6 py-3 rounded-lg hover:bg-brand-green-dark active:scale-95 spring-transition" style="box-shadow: 0 2px 8px rgba(26,83,26,0.2);">
+              Book Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Optional add-on note -->
+        <p class="mt-8 text-center text-sm text-brand-charcoal/60">Optional add-on: Anti-microbial treatment available for any service. Ask when you call.</p>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 3b. BEFORE & AFTER                           -->
+    <!-- ============================================ -->
+    <section class="py-16 sm:py-24">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+          <p class="text-brand-green text-sm font-semibold uppercase tracking-widest mb-3">Photo Proof</p>
+          <h2 class="font-display text-3xl sm:text-4xl text-brand-charcoal" style="letter-spacing: -0.03em;">The Difference Is Visible</h2>
+          <p class="mt-4 text-brand-charcoal/70 max-w-xl mx-auto" style="line-height: 1.7;">Every job includes before &amp; after photos so you can see exactly what was removed from your home's air system.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
+          <!-- Before -->
+          <div class="relative overflow-hidden rounded-2xl" style="box-shadow: 0 2px 8px rgba(0,0,0,0.10), 0 8px 24px rgba(0,0,0,0.08);">
+            <img src="https://placehold.co/800x560/4a3728/ffffff?text=Before+Photo" alt="Air duct before cleaning — heavy dust and debris buildup" class="w-full h-72 sm:h-80 object-cover">
+            <div class="absolute top-4 left-4">
+              <span class="inline-block bg-black/70 text-white text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">Before</span>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent px-5 py-4">
+              <p class="text-white text-sm font-medium">Heavy dust &amp; debris buildup</p>
+            </div>
+          </div>
+
+          <!-- After -->
+          <div class="relative overflow-hidden rounded-2xl" style="box-shadow: 0 2px 8px rgba(26,83,26,0.12), 0 8px 24px rgba(26,83,26,0.10);">
+            <img src="https://placehold.co/800x560/d4edda/1A531A?text=After+Photo" alt="Air duct after cleaning — clean and clear airflow" class="w-full h-72 sm:h-80 object-cover">
+            <div class="absolute top-4 left-4">
+              <span class="inline-block bg-brand-green text-white text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">After</span>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-green/70 to-transparent px-5 py-4">
+              <p class="text-white text-sm font-medium">Completely clear — like new</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA below -->
+        <div class="mt-10 text-center">
+          <a href="tel:+15719841525" class="focus-ring inline-flex items-center gap-2 bg-brand-green text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-brand-green-dark active:scale-95 spring-transition" style="box-shadow: 0 4px 12px rgba(26,83,26,0.25);">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            Get This Result — Call (571) 984-1525
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 4. WHY CHOOSE US                             -->
+    <!-- ============================================ -->
+    <section id="why-us" class="py-16 sm:py-24">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+          <h2 class="font-display text-3xl sm:text-4xl text-brand-green" style="letter-spacing: -0.03em;">Why Choose Nature Airduct</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-8 lg:gap-12">
+          <!-- Benefit 1 -->
+          <div class="text-center">
+            <div class="w-14 h-14 mx-auto rounded-xl bg-brand-green/10 flex items-center justify-center mb-4">
+              <svg class="w-7 h-7 text-brand-green" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"/></svg>
+            </div>
+            <h3 class="font-display text-lg text-brand-green mb-2">Transparent Pricing</h3>
+            <p class="text-sm text-brand-charcoal/70" style="line-height: 1.7;">No hidden fees or surprise charges. You know exactly what you'll pay before we start any work.</p>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="text-center">
+            <div class="w-14 h-14 mx-auto rounded-xl bg-brand-green/10 flex items-center justify-center mb-4">
+              <svg class="w-7 h-7 text-brand-green" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+            </div>
+            <h3 class="font-display text-lg text-brand-green mb-2">Guaranteed Results</h3>
+            <p class="text-sm text-brand-charcoal/70" style="line-height: 1.7;">Every job comes with before &amp; after photo proof and a money-back guarantee. See the difference yourself.</p>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="text-center">
+            <div class="w-14 h-14 mx-auto rounded-xl bg-brand-green/10 flex items-center justify-center mb-4">
+              <svg class="w-7 h-7 text-brand-green" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 class="font-display text-lg text-brand-green mb-2">Available 7 Days</h3>
+            <p class="text-sm text-brand-charcoal/70" style="line-height: 1.7;">We're open Monday through Sunday, 8 AM to 8 PM. Book a time that works for your schedule.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 5. HOW IT WORKS                              -->
+    <!-- ============================================ -->
+    <section class="py-16 sm:py-24 bg-brand-blue-light relative noise-texture">
+      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+          <h2 class="font-display text-3xl sm:text-4xl text-brand-green" style="letter-spacing: -0.03em;">How It Works</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
+          <!-- Step 1 -->
+          <div class="bg-white rounded-2xl overflow-hidden" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 6px 20px rgba(26,83,26,0.07);">
+            <div class="relative">
+              <img src="https://placehold.co/600x400/e8f0e8/1A531A?text=Scheduling+Call" alt="Technician scheduling a service call" class="w-full h-48 object-cover">
+              <div class="absolute top-3 left-3">
+                <div class="w-9 h-9 rounded-full bg-brand-green text-white flex items-center justify-center text-sm font-bold" style="box-shadow: 0 2px 8px rgba(26,83,26,0.35);">1</div>
+              </div>
+            </div>
+            <div class="p-5">
+              <h3 class="font-display text-lg text-brand-green mb-2">Call or Schedule Service</h3>
+              <p class="text-sm text-brand-charcoal/70" style="line-height: 1.7;">Reach us by phone or fill out the form below. We confirm same-day.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-white rounded-2xl overflow-hidden" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 6px 20px rgba(26,83,26,0.07);">
+            <div class="relative">
+              <img src="https://placehold.co/600x400/d4edda/1A531A?text=Technician+at+Work" alt="Technician cleaning air ducts with professional equipment" class="w-full h-48 object-cover">
+              <div class="absolute top-3 left-3">
+                <div class="w-9 h-9 rounded-full bg-brand-green text-white flex items-center justify-center text-sm font-bold" style="box-shadow: 0 2px 8px rgba(26,83,26,0.35);">2</div>
+              </div>
+            </div>
+            <div class="p-5">
+              <h3 class="font-display text-lg text-brand-green mb-2">We Clean Your System</h3>
+              <p class="text-sm text-brand-charcoal/70" style="line-height: 1.7;">Our technician arrives on time with professional equipment and cleans every vent.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-white rounded-2xl overflow-hidden" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 6px 20px rgba(26,83,26,0.07);">
+            <div class="relative">
+              <img src="https://placehold.co/600x400/c8e6c9/1A531A?text=Clean+Results" alt="Clean air duct after professional service with before and after photos" class="w-full h-48 object-cover">
+              <div class="absolute top-3 left-3">
+                <div class="w-9 h-9 rounded-full bg-brand-green text-white flex items-center justify-center text-sm font-bold" style="box-shadow: 0 2px 8px rgba(26,83,26,0.35);">3</div>
+              </div>
+            </div>
+            <div class="p-5">
+              <h3 class="font-display text-lg text-brand-green mb-2">Breathe Cleaner Air</h3>
+              <p class="text-sm text-brand-charcoal/70" style="line-height: 1.7;">Get before &amp; after photos and enjoy cleaner, healthier air — backed by our guarantee.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 6. SERVICE AREA                              -->
+    <!-- ============================================ -->
+    <section id="area" class="py-16 sm:py-24">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-10">
+          <h2 class="font-display text-3xl sm:text-4xl text-brand-green" style="letter-spacing: -0.03em;">Serving Northern Virginia</h2>
+          <p class="mt-4 text-brand-charcoal/70 text-lg" style="line-height: 1.7;">Based in Reston, VA — proudly serving the entire Northern Virginia area.</p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-3 max-w-3xl mx-auto">
+          <span class="inline-block bg-brand-green/5 text-brand-charcoal/80 text-sm font-medium px-4 py-2 rounded-lg border border-brand-green/10">Fairfax</span>
+          <span class="inline-block bg-brand-green/5 text-brand-charcoal/80 text-sm font-medium px-4 py-2 rounded-lg border border-brand-green/10">Alexandria</span>
+          <span class="inline-block bg-brand-green/5 text-brand-charcoal/80 text-sm font-medium px-4 py-2 rounded-lg border border-brand-green/10">Annandale</span>
+          <span class="inline-block bg-brand-green/5 text-brand-charcoal/80 text-sm font-medium px-4 py-2 rounded-lg border border-brand-green/10">Chantilly</span>
+          <span class="inline-block bg-brand-green/5 text-brand-charcoal/80 text-sm font-medium px-4 py-2 rounded-lg border border-brand-green/10">Centreville</span>
+          <span class="inline-block bg-brand-green/5 text-brand-charcoal/80 text-sm font-medium px-4 py-2 rounded-lg border border-brand-green/10">Dale City</span>
+          <span class="inline-block bg-brand-green/5 text-brand-charcoal/80 text-sm font-medium px-4 py-2 rounded-lg border border-brand-green/10">Falls Church</span>
+          <span class="inline-block bg-brand-green/5 text-brand-charcoal/80 text-sm font-medium px-4 py-2 rounded-lg border border-brand-green/10">Herndon</span>
+          <span class="inline-block bg-brand-green/5 text-brand-charcoal/80 text-sm font-medium px-4 py-2 rounded-lg border border-brand-green/10">Lorton</span>
+          <span class="inline-block bg-brand-green/5 text-brand-charcoal/80 text-sm font-medium px-4 py-2 rounded-lg border border-brand-green/10">Manassas</span>
+          <span class="inline-block bg-brand-green/5 text-brand-charcoal/80 text-sm font-medium px-4 py-2 rounded-lg border border-brand-green/10">Reston</span>
+          <span class="inline-block bg-brand-green/5 text-brand-charcoal/80 text-sm font-medium px-4 py-2 rounded-lg border border-brand-green/10">Springfield</span>
+          <span class="inline-block bg-brand-green/5 text-brand-charcoal/80 text-sm font-medium px-4 py-2 rounded-lg border border-brand-green/10">Vienna</span>
+          <span class="inline-block bg-brand-green/5 text-brand-charcoal/80 text-sm font-medium px-4 py-2 rounded-lg border border-brand-green/10">Woodbridge</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 7. REVIEWS / SOCIAL PROOF                    -->
+    <!-- ============================================ -->
+    <section id="reviews" class="py-16 sm:py-24 bg-brand-blue-light relative noise-texture">
+      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+          <h2 class="font-display text-3xl sm:text-4xl text-brand-green" style="letter-spacing: -0.03em;">What Our Customers Say</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <!-- Review 1 -->
+          <div class="bg-white rounded-xl p-6" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 4px 12px rgba(26,83,26,0.06);">
+            <div class="flex gap-1 mb-3">
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-sm text-brand-charcoal/80 mb-4" style="line-height: 1.7;">
+              <span class="text-brand-blue text-2xl font-serif leading-none">"</span>
+              They did an amazing job cleaning our ducts. The before and after photos really showed the difference. Our allergies have noticeably improved since the cleaning.
+            </p>
+            <p class="text-sm font-semibold text-brand-charcoal">Sarah M.</p>
+            <p class="text-xs text-brand-charcoal/50">Fairfax, VA</p>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="bg-white rounded-xl p-6" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 4px 12px rgba(26,83,26,0.06);">
+            <div class="flex gap-1 mb-3">
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-sm text-brand-charcoal/80 mb-4" style="line-height: 1.7;">
+              <span class="text-brand-blue text-2xl font-serif leading-none">"</span>
+              Very professional and on time. They cleaned our dryer vent and showed us how clogged it was — I had no idea it was a fire hazard. Great price too.
+            </p>
+            <p class="text-sm font-semibold text-brand-charcoal">James R.</p>
+            <p class="text-xs text-brand-charcoal/50">Reston, VA</p>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="bg-white rounded-xl p-6" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 4px 12px rgba(26,83,26,0.06);">
+            <div class="flex gap-1 mb-3">
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-sm text-brand-charcoal/80 mb-4" style="line-height: 1.7;">
+              <span class="text-brand-blue text-2xl font-serif leading-none">"</span>
+              We got the bundle deal and it was absolutely worth it. Quick, clean, and they left our house spotless. Will definitely recommend to neighbors.
+            </p>
+            <p class="text-sm font-semibold text-brand-charcoal">Maria L.</p>
+            <p class="text-xs text-brand-charcoal/50">Herndon, VA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 8. CONTACT / QUOTE FORM                      -->
+    <!-- ============================================ -->
+    <section id="contact" class="py-16 sm:py-24">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+          <h2 class="font-display text-3xl sm:text-4xl text-brand-green" style="letter-spacing: -0.03em;">Schedule Your Service</h2>
+          <p class="mt-4 text-brand-charcoal/70 text-lg" style="line-height: 1.7;">Call us directly or fill out the form and we'll get back to you quickly.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-5 gap-8 lg:gap-12">
+          <!-- Form (3 cols) -->
+          <div class="lg:col-span-3">
+            <!-- Success message (hidden until submission) -->
+            <div id="contact-success" class="hidden bg-white rounded-xl p-8 sm:p-12 text-center" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 4px 12px rgba(26,83,26,0.06);">
+              <div class="w-16 h-16 mx-auto rounded-full bg-brand-green/10 flex items-center justify-center mb-5">
+                <svg class="w-8 h-8 text-brand-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </div>
+              <h3 class="font-display text-2xl text-brand-green mb-3">We'll be in touch soon!</h3>
+              <p class="text-brand-charcoal/70 mb-6" style="line-height: 1.7;">Thanks for reaching out. We typically respond within a few hours. If you need us sooner, give us a call.</p>
+              <a href="tel:+15719841525" class="focus-ring inline-flex items-center gap-2 bg-brand-green text-white font-semibold px-6 py-3 rounded-lg hover:bg-brand-green-dark active:scale-95 spring-transition" style="box-shadow: 0 4px 12px rgba(26,83,26,0.2);">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                Call (571) 984-1525
+              </a>
+            </div>
+            <form id="contact-form" action="#" method="POST" class="bg-white rounded-xl p-6 sm:p-8" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 4px 12px rgba(26,83,26,0.06);">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-brand-charcoal mb-1.5">Name</label>
+                  <input type="text" id="name" name="name" required class="focus-ring w-full px-4 py-3 rounded-lg border border-gray-200 text-sm text-brand-charcoal placeholder-gray-400 hover:border-brand-green/30 spring-transition" placeholder="Your name">
+                </div>
+                <div>
+                  <label for="phone" class="block text-sm font-medium text-brand-charcoal mb-1.5">Phone</label>
+                  <input type="tel" id="phone" name="phone" required autocomplete="tel" class="focus-ring w-full px-4 py-3 rounded-lg border border-gray-200 text-sm text-brand-charcoal placeholder-gray-400 spring-transition" placeholder="(571) 555-5555">
+                  <p id="phone-error" class="mt-1.5 text-xs text-red-600 hidden">Please enter a valid 10-digit US phone number.</p>
+                </div>
+              </div>
+              <div class="mt-4">
+                <label for="email" class="block text-sm font-medium text-brand-charcoal mb-1.5">Email</label>
+                <input type="email" id="email" name="email" class="focus-ring w-full px-4 py-3 rounded-lg border border-gray-200 text-sm text-brand-charcoal placeholder-gray-400 hover:border-brand-green/30 spring-transition" placeholder="you@email.com">
+              </div>
+              <div class="grid sm:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label for="service" class="block text-sm font-medium text-brand-charcoal mb-1.5">Service Needed</label>
+                  <select id="service" name="service" required class="focus-ring w-full px-4 py-3 rounded-lg border border-gray-200 text-sm text-brand-charcoal hover:border-brand-green/30 spring-transition bg-white">
+                    <option value="">Select a service</option>
+                    <option value="air-duct">Air Duct Cleaning — $199</option>
+                    <option value="dryer-vent">Dryer Vent Cleaning — $99</option>
+                    <option value="bundle">Bundle (Best Value) — $280</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="date" class="block text-sm font-medium text-brand-charcoal mb-1.5">Preferred Date</label>
+                  <input type="date" id="date" name="date" class="focus-ring w-full px-4 py-3 rounded-lg border border-gray-200 text-sm text-brand-charcoal hover:border-brand-green/30 spring-transition">
+                </div>
+              </div>
+              <div class="mt-4">
+                <label for="message" class="block text-sm font-medium text-brand-charcoal mb-1.5">Message <span class="text-brand-charcoal/40 font-normal">(optional)</span></label>
+                <textarea id="message" name="message" rows="3" class="focus-ring w-full px-4 py-3 rounded-lg border border-gray-200 text-sm text-brand-charcoal placeholder-gray-400 hover:border-brand-green/30 spring-transition resize-none" placeholder="Anything we should know?"></textarea>
+              </div>
+              <button type="submit" class="focus-ring mt-6 w-full bg-brand-green text-white font-semibold px-6 py-3.5 rounded-lg hover:bg-brand-green-dark active:scale-95 spring-transition" style="box-shadow: 0 4px 12px rgba(26,83,26,0.25);">
+                Schedule Service
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info (2 cols) -->
+          <div class="lg:col-span-2 flex flex-col gap-6">
+            <!-- Phone card -->
+            <a href="tel:+15719841525" class="focus-ring group bg-brand-green rounded-xl p-6 text-white hover:bg-brand-green-dark spring-transition" style="box-shadow: 0 4px 12px rgba(26,83,26,0.25);">
+              <div class="flex items-center gap-3 mb-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                <span class="text-sm font-medium opacity-80">Call Us Now</span>
+              </div>
+              <span class="text-2xl font-bold">(571) 984-1525</span>
+            </a>
+
+            <!-- Email -->
+            <div class="bg-white rounded-xl p-6" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 4px 12px rgba(26,83,26,0.06);">
+              <div class="flex items-center gap-3 mb-2">
+                <svg class="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+                <span class="text-sm font-medium text-brand-charcoal/60">Email</span>
+              </div>
+              <a href="mailto:info@natureairduct.com" class="text-brand-charcoal font-medium hover:text-brand-green spring-transition focus-ring rounded">info@natureairduct.com</a>
+            </div>
+
+            <!-- Hours -->
+            <div class="bg-white rounded-xl p-6" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 4px 12px rgba(26,83,26,0.06);">
+              <div class="flex items-center gap-3 mb-2">
+                <svg class="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span class="text-sm font-medium text-brand-charcoal/60">Business Hours</span>
+              </div>
+              <p class="text-brand-charcoal font-medium">Mon – Sun, 8 AM – 8 PM</p>
+            </div>
+
+            <!-- Address -->
+            <div class="bg-white rounded-xl p-6" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 4px 12px rgba(26,83,26,0.06);">
+              <div class="flex items-center gap-3 mb-2">
+                <svg class="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                <span class="text-sm font-medium text-brand-charcoal/60">Location</span>
+              </div>
+              <p class="text-brand-charcoal font-medium">11001 Freedom Dr<br>Reston, VA 20190</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================ -->
+  <!-- 9. FOOTER                                    -->
+  <!-- ============================================ -->
+  <footer class="bg-brand-charcoal text-white/80 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Brand -->
+        <div class="sm:col-span-2 lg:col-span-1">
+          <img src="brand-assets/NatureAirductLogoWeb.svg" alt="Nature Airduct" class="h-12 w-auto mb-4">
+          <p class="text-sm text-white/50" style="line-height: 1.7;">Professional air duct and dryer vent cleaning for healthier homes across Northern Virginia.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Quick Links</h4>
+          <nav class="flex flex-col gap-2">
+            <a href="#services" class="text-sm text-white/60 hover:text-white spring-transition focus-ring rounded">Services & Pricing</a>
+            <a href="#why-us" class="text-sm text-white/60 hover:text-white spring-transition focus-ring rounded">Why Choose Us</a>
+            <a href="#reviews" class="text-sm text-white/60 hover:text-white spring-transition focus-ring rounded">Reviews</a>
+            <a href="#contact" class="text-sm text-white/60 hover:text-white spring-transition focus-ring rounded">Schedule Service</a>
+          </nav>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Contact</h4>
+          <div class="flex flex-col gap-2 text-sm text-white/60">
+            <a href="tel:+15719841525" class="hover:text-white spring-transition focus-ring rounded">(571) 984-1525</a>
+            <a href="mailto:info@natureairduct.com" class="hover:text-white spring-transition focus-ring rounded">info@natureairduct.com</a>
+            <p>11001 Freedom Dr, Reston, VA 20190</p>
+            <p>Mon – Sun, 8 AM – 8 PM</p>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Follow Us</h4>
+          <a href="https://www.facebook.com/profile.php?id=61558342405793" target="_blank" rel="noopener noreferrer" class="focus-ring inline-flex items-center gap-2 text-sm text-white/60 hover:text-white spring-transition rounded">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+
+      <!-- Areas served (SEO) -->
+      <div class="mt-10 pt-8 border-t border-white/10">
+        <p class="text-xs text-white/30 mb-2">Areas We Serve:</p>
+        <p class="text-xs text-white/30">Fairfax · Alexandria · Annandale · Chantilly · Centreville · Dale City · Falls Church · Herndon · Lorton · Manassas · Reston · Springfield · Vienna · Woodbridge</p>
+      </div>
+
+      <div class="mt-6 pt-6 border-t border-white/10 text-center">
+        <p class="text-xs text-white/30">&copy; 2025 Nature Airduct. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile menu toggle -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    // Close menu on nav click
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+    // Phone formatting + validation
+    const phoneInput = document.getElementById('phone');
+    const phoneError = document.getElementById('phone-error');
+
+    function formatPhone(raw) {
+      const d = raw.replace(/\D/g, '').slice(0, 10);
+      if (d.length === 0) return '';
+      if (d.length <= 3) return '(' + d;
+      if (d.length <= 6) return '(' + d.slice(0, 3) + ') ' + d.slice(3);
+      return '(' + d.slice(0, 3) + ') ' + d.slice(3, 6) + '-' + d.slice(6);
+    }
+
+    function isValidPhone(value) {
+      const d = value.replace(/\D/g, '');
+      return d.length === 10 || (d.length === 11 && d[0] === '1');
+    }
+
+    function setPhoneState(state) {
+      phoneInput.style.borderColor = state === 'error' ? '#f87171' : state === 'ok' ? '#1A531A' : '';
+      phoneInput.style.borderWidth = '1px';
+      phoneError.classList.toggle('hidden', state !== 'error');
+    }
+
+    phoneInput.addEventListener('input', e => {
+      const pos = e.target.selectionStart;
+      const prev = e.target.value;
+      const formatted = formatPhone(prev);
+      e.target.value = formatted;
+      // keep cursor roughly in place after formatting
+      const diff = formatted.length - prev.length;
+      e.target.setSelectionRange(pos + diff, pos + diff);
+      if (isValidPhone(formatted)) setPhoneState('ok');
+      else if (phoneError.classList.contains('hidden') === false) setPhoneState('error');
+      else setPhoneState('neutral');
+    });
+
+    phoneInput.addEventListener('blur', () => {
+      if (!phoneInput.value) { setPhoneState('neutral'); return; }
+      setPhoneState(isValidPhone(phoneInput.value) ? 'ok' : 'error');
+    });
+
+    const contactForm = document.getElementById('contact-form');
+    const contactSuccess = document.getElementById('contact-success');
+    if (contactForm) {
+      contactForm.addEventListener('submit', e => {
+        e.preventDefault();
+        if (!isValidPhone(phoneInput.value)) {
+          setPhoneState('error');
+          phoneInput.focus();
+          return;
+        }
+        // Show success state
+        contactForm.classList.add('hidden');
+        contactSuccess.classList.remove('hidden');
+        contactSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    }
+
+    // Offset scroll for fixed header
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const offset = 80;
+          const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

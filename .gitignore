@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Dev tooling artifacts
+temporary screenshots/
+package-lock.json
+
+# Local IDE / Claude Code config
+.claude/
+
+# Internal planning docs (not for public consumption)
+enhancements.md
+launch-todo-list.md
+
+# Reference material (not part of the live site)
+old-website-screenshots/
