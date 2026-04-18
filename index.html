@@ -361,7 +361,10 @@
         <div class="grid sm:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
           <!-- Before -->
           <div class="relative overflow-hidden rounded-2xl" style="box-shadow: 0 2px 8px rgba(0,0,0,0.10), 0 8px 24px rgba(0,0,0,0.08);">
-            <img src="https://placehold.co/800x560/4a3728/ffffff?text=Before+Photo" alt="Air duct before cleaning — heavy dust and debris buildup" class="w-full h-72 sm:h-80 object-cover">
+            <picture>
+              <source srcset="brand-assets/before-after/AirDuctBefore.webp" type="image/webp">
+              <img src="brand-assets/before-after/AirDuctBefore.png" alt="Air duct before cleaning — heavy dust and debris buildup" class="w-full h-72 sm:h-80 object-cover" width="400" height="225" loading="lazy">
+            </picture>
             <div class="absolute top-4 left-4">
               <span class="inline-block bg-black/70 text-white text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">Before</span>
             </div>
@@ -372,7 +375,10 @@
 
           <!-- After -->
           <div class="relative overflow-hidden rounded-2xl" style="box-shadow: 0 2px 8px rgba(26,83,26,0.12), 0 8px 24px rgba(26,83,26,0.10);">
-            <img src="https://placehold.co/800x560/d4edda/1A531A?text=After+Photo" alt="Air duct after cleaning — clean and clear airflow" class="w-full h-72 sm:h-80 object-cover">
+            <picture>
+              <source srcset="brand-assets/before-after/AirDuctAfter.webp" type="image/webp">
+              <img src="brand-assets/before-after/AirDuctAfter.png" alt="Air duct after cleaning — clean and clear airflow" class="w-full h-72 sm:h-80 object-cover" width="400" height="225" loading="lazy">
+            </picture>
             <div class="absolute top-4 left-4">
               <span class="inline-block bg-brand-green text-white text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">After</span>
             </div>
@@ -445,7 +451,10 @@
           <!-- Step 1 -->
           <div class="bg-white rounded-2xl overflow-hidden" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 6px 20px rgba(26,83,26,0.07);">
             <div class="relative">
-              <img src="https://placehold.co/600x400/e8f0e8/1A531A?text=Scheduling+Call" alt="Technician scheduling a service call" class="w-full h-48 object-cover">
+              <picture>
+                <source srcset="brand-assets/before-after/ScheduleCall.webp" type="image/webp">
+                <img src="brand-assets/before-after/ScheduleCall.jpg" alt="Customer scheduling an air duct cleaning service call" class="w-full h-48 object-cover" width="600" height="400" loading="lazy">
+              </picture>
               <div class="absolute top-3 left-3">
                 <div class="w-9 h-9 rounded-full bg-brand-green text-white flex items-center justify-center text-sm font-bold" style="box-shadow: 0 2px 8px rgba(26,83,26,0.35);">1</div>
               </div>
@@ -459,7 +468,10 @@
           <!-- Step 2 -->
           <div class="bg-white rounded-2xl overflow-hidden" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 6px 20px rgba(26,83,26,0.07);">
             <div class="relative">
-              <img src="https://placehold.co/600x400/d4edda/1A531A?text=Technician+at+Work" alt="Technician cleaning air ducts with professional equipment" class="w-full h-48 object-cover">
+              <picture>
+                <source srcset="brand-assets/before-after/AirDuctCleaning.webp" type="image/webp">
+                <img src="brand-assets/before-after/AirDuctCleaning.webp" alt="Technician cleaning air ducts with professional brush and vacuum equipment" class="w-full h-48 object-cover" width="600" height="400" loading="lazy">
+              </picture>
               <div class="absolute top-3 left-3">
                 <div class="w-9 h-9 rounded-full bg-brand-green text-white flex items-center justify-center text-sm font-bold" style="box-shadow: 0 2px 8px rgba(26,83,26,0.35);">2</div>
               </div>
@@ -473,7 +485,10 @@
           <!-- Step 3 -->
           <div class="bg-white rounded-2xl overflow-hidden" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 6px 20px rgba(26,83,26,0.07);">
             <div class="relative">
-              <img src="https://placehold.co/600x400/c8e6c9/1A531A?text=Clean+Results" alt="Clean air duct after professional service with before and after photos" class="w-full h-48 object-cover">
+              <picture>
+                <source srcset="brand-assets/before-after/CleanAirduct.webp" type="image/webp">
+                <img src="brand-assets/before-after/CleanAirduct.png" alt="Clean air duct interior after professional cleaning service" class="w-full h-48 object-cover" width="600" height="357" loading="lazy">
+              </picture>
               <div class="absolute top-3 left-3">
                 <div class="w-9 h-9 rounded-full bg-brand-green text-white flex items-center justify-center text-sm font-bold" style="box-shadow: 0 2px 8px rgba(26,83,26,0.35);">3</div>
               </div>
@@ -634,6 +649,33 @@
                 <div>
                   <label for="date" class="block text-sm font-medium text-brand-charcoal mb-1.5">Preferred Date</label>
                   <input type="date" id="date" name="date" class="focus-ring w-full px-4 py-3 rounded-lg border border-gray-200 text-sm text-brand-charcoal hover:border-brand-green/30 spring-transition">
+                </div>
+              </div>
+              <div class="mt-4">
+                <p class="block text-sm font-medium text-brand-charcoal mb-2">Preferred Time <span class="text-brand-charcoal/40 font-normal">(optional)</span></p>
+                <div class="flex flex-wrap gap-3">
+                  <label class="flex items-center gap-2 cursor-pointer group">
+                    <input type="radio" name="time_of_day" value="morning" class="w-4 h-4 accent-brand-green cursor-pointer">
+                    <span class="text-sm text-brand-charcoal group-hover:text-brand-green spring-transition">Morning</span>
+                  </label>
+                  <label class="flex items-center gap-2 cursor-pointer group">
+                    <input type="radio" name="time_of_day" value="noon" class="w-4 h-4 accent-brand-green cursor-pointer">
+                    <span class="text-sm text-brand-charcoal group-hover:text-brand-green spring-transition">Noon</span>
+                  </label>
+                  <label class="flex items-center gap-2 cursor-pointer group">
+                    <input type="radio" name="time_of_day" value="afternoon" class="w-4 h-4 accent-brand-green cursor-pointer">
+                    <span class="text-sm text-brand-charcoal group-hover:text-brand-green spring-transition">Afternoon</span>
+                  </label>
+                </div>
+              </div>
+              <div class="grid sm:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label for="street-address" class="block text-sm font-medium text-brand-charcoal mb-1.5">Street Address <span class="text-brand-charcoal/40 font-normal">(optional)</span></label>
+                  <input type="text" id="street-address" name="street_address" autocomplete="street-address" class="focus-ring w-full px-4 py-3 rounded-lg border border-gray-200 text-sm text-brand-charcoal placeholder-gray-400 hover:border-brand-green/30 spring-transition" placeholder="123 Main St">
+                </div>
+                <div>
+                  <label for="town" class="block text-sm font-medium text-brand-charcoal mb-1.5">Town <span class="text-brand-charcoal/40 font-normal">(optional)</span></label>
+                  <input type="text" id="town" name="town" autocomplete="address-level2" class="focus-ring w-full px-4 py-3 rounded-lg border border-gray-200 text-sm text-brand-charcoal placeholder-gray-400 hover:border-brand-green/30 spring-transition" placeholder="Reston">
                 </div>
               </div>
               <div class="mt-4">
