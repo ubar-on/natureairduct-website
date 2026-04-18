@@ -9,6 +9,14 @@
   <meta property="og:description" content="Whole-home air duct cleaning starting at $199 with before & after photos and a money-back guarantee. Serving Fairfax, Reston, Alexandria & more.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://natureairduct.com">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JGC92F80TL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JGC92F80TL');
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -866,6 +874,7 @@
           });
           const data = await res.json();
           if (data.success) {
+            gtag('event', 'generate_lead', { event_category: 'form', event_label: 'contact_form' });
             contactForm.classList.add('hidden');
             contactSuccess.classList.remove('hidden');
             contactSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -880,6 +889,13 @@
         }
       });
     }
+
+    // Phone click tracking
+    document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+      el.addEventListener('click', () => {
+        gtag('event', 'phone_call', { event_category: 'engagement', event_label: 'tel_link' });
+      });
+    });
 
     // Offset scroll for fixed header
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
