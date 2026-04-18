@@ -620,7 +620,10 @@
                 Call (571) 984-1525
               </a>
             </div>
-            <form id="contact-form" action="#" method="POST" class="bg-white rounded-xl p-6 sm:p-8" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 4px 12px rgba(26,83,26,0.06);">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="bg-white rounded-xl p-6 sm:p-8" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 4px 12px rgba(26,83,26,0.06);">
+              <input type="hidden" name="access_key" value="a7e5381c-8473-4cce-adc4-9b6589ff81e3">
+              <input type="hidden" name="subject" value="New Service Request — Nature Airduct">
+              <input type="checkbox" name="botcheck" class="hidden" style="display:none">
               <div class="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label for="name" class="block text-sm font-medium text-brand-charcoal mb-1.5">Name</label>
@@ -682,6 +685,7 @@
                 <label for="message" class="block text-sm font-medium text-brand-charcoal mb-1.5">Message <span class="text-brand-charcoal/40 font-normal">(optional)</span></label>
                 <textarea id="message" name="message" rows="3" class="focus-ring w-full px-4 py-3 rounded-lg border border-gray-200 text-sm text-brand-charcoal placeholder-gray-400 hover:border-brand-green/30 spring-transition resize-none" placeholder="Anything we should know?"></textarea>
               </div>
+              <p id="form-error" class="hidden mt-4 text-sm text-red-600">Something went wrong — please try again or call us at (571) 984-1525.</p>
               <button type="submit" class="focus-ring mt-6 w-full bg-brand-green text-white font-semibold px-6 py-3.5 rounded-lg hover:bg-brand-green-dark active:scale-95 spring-transition" style="box-shadow: 0 4px 12px rgba(26,83,26,0.25);">
                 Schedule Service
               </button>
@@ -843,18 +847,37 @@
 
     const contactForm = document.getElementById('contact-form');
     const contactSuccess = document.getElementById('contact-success');
+    const submitBtn = contactForm ? contactForm.querySelector('button[type="submit"]') : null;
     if (contactForm) {
-      contactForm.addEventListener('submit', e => {
+      contactForm.addEventListener('submit', async e => {
         e.preventDefault();
         if (!isValidPhone(phoneInput.value)) {
           setPhoneState('error');
           phoneInput.focus();
           return;
         }
-        // Show success state
-        contactForm.classList.add('hidden');
-        contactSuccess.classList.remove('hidden');
-        contactSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Loading state
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
+        try {
+          const res = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: new FormData(contactForm)
+          });
+          const data = await res.json();
+          if (data.success) {
+            contactForm.classList.add('hidden');
+            contactSuccess.classList.remove('hidden');
+            contactSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } else {
+            throw new Error(data.message || 'Submission failed');
+          }
+        } catch (err) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Schedule Service';
+          const errEl = document.getElementById('form-error');
+          if (errEl) { errEl.classList.remove('hidden'); }
+        }
       });
     }
 

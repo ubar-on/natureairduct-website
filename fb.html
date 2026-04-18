@@ -202,7 +202,10 @@
             Call (571) 984-1525
           </a>
         </div>
-        <form id="fb-form" action="#" method="POST" class="bg-white rounded-xl p-6" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 4px 12px rgba(26,83,26,0.06);">
+        <form id="fb-form" action="https://api.web3forms.com/submit" method="POST" class="bg-white rounded-xl p-6" style="box-shadow: 0 1px 3px rgba(26,83,26,0.08), 0 4px 12px rgba(26,83,26,0.06);">
+          <input type="hidden" name="access_key" value="7dd187c1-07e3-40b1-95b6-407bb8abab29">
+          <input type="hidden" name="subject" value="New Service Request — Nature Airduct (Facebook)">
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none">
           <div class="space-y-4">
             <div>
               <label for="fb-name" class="block text-sm font-medium text-brand-charcoal mb-1">Name</label>
@@ -222,6 +225,7 @@
               </select>
             </div>
           </div>
+          <p id="fb-form-error" class="hidden mt-4 text-sm text-red-600">Something went wrong — please try again or call us at (571) 984-1525.</p>
           <button type="submit" class="focus-ring mt-6 w-full bg-brand-green text-white font-semibold px-6 py-3.5 rounded-lg hover:bg-brand-green-dark active:scale-95 spring-transition" style="box-shadow: 0 4px 12px rgba(26,83,26,0.25);">
             Schedule Service
           </button>
@@ -334,18 +338,37 @@
 
     const fbForm = document.getElementById('fb-form');
     const fbSuccess = document.getElementById('fb-success');
+    const fbSubmitBtn = fbForm ? fbForm.querySelector('button[type="submit"]') : null;
     if (fbForm) {
-      fbForm.addEventListener('submit', e => {
+      fbForm.addEventListener('submit', async e => {
         e.preventDefault();
         if (!isValidPhone(fbPhone.value)) {
           setFbPhoneState('error');
           fbPhone.focus();
           return;
         }
-        // Show success state
-        fbForm.classList.add('hidden');
-        fbSuccess.classList.remove('hidden');
-        fbSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Loading state
+        fbSubmitBtn.disabled = true;
+        fbSubmitBtn.textContent = 'Sending…';
+        try {
+          const res = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: new FormData(fbForm)
+          });
+          const data = await res.json();
+          if (data.success) {
+            fbForm.classList.add('hidden');
+            fbSuccess.classList.remove('hidden');
+            fbSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } else {
+            throw new Error(data.message || 'Submission failed');
+          }
+        } catch (err) {
+          fbSubmitBtn.disabled = false;
+          fbSubmitBtn.textContent = 'Schedule Service';
+          const errEl = document.getElementById('fb-form-error');
+          if (errEl) { errEl.classList.remove('hidden'); }
+        }
       });
     }
   </script>
