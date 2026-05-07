@@ -887,7 +887,7 @@
           const data = await res.json();
           if (data.success) {
             gtag('event', 'generate_lead', { event_category: 'form', event_label: 'contact_form' });
-            fbq('track', 'Lead');
+            window.fbq?.('track', 'Lead');
             contactForm.classList.add('hidden');
             contactSuccess.classList.remove('hidden');
             contactSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -907,7 +907,7 @@
     document.querySelectorAll('a[href^="tel:"]').forEach(el => {
       el.addEventListener('click', () => {
         gtag('event', 'phone_call', { event_category: 'engagement', event_label: 'tel_link' });
-        fbq('track', 'Contact');
+        window.fbq?.('track', 'Contact');
       });
     });
 
