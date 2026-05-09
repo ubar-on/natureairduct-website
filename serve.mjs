@@ -25,7 +25,8 @@ const MIME_TYPES = {
 };
 
 const server = http.createServer((req, res) => {
-  let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
+  const urlPath = new URL(req.url, `http://localhost`).pathname;
+  let filePath = path.join(__dirname, urlPath === '/' ? 'index.html' : urlPath);
   filePath = decodeURIComponent(filePath);
 
   const ext = path.extname(filePath).toLowerCase();
