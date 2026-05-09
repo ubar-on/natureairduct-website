@@ -489,46 +489,57 @@
       });
     });
 
-      const fbForm = document.getElementById('fb-form');
-      const fbSuccess = document.getElementById('fb-success');
-      const fbSubmitBtn = fbForm ? fbForm.querySelector('button[type="submit"]') : null;
-      if (fbForm) {
-        fbForm.addEventListener('submit', async e => {
-          e.preventDefault();
-          if (!isValidPhone(fbPhone.value)) {
-            setFbPhoneState('error');
-            fbPhone.focus();
-            return;
-          }
-          // Loading state
-          fbSubmitBtn.disabled = true;
-          fbSubmitBtn.textContent = 'Sending…';
-          try {
-            const res = await fetch('https://api.web3forms.com/submit', {
-              method: 'POST',
-              body: new FormData(fbForm)
+    // Form submission handler (outside fbPhone guard)
+    const fbForm = document.getElementById('fb-form');
+    const fbSuccess = document.getElementById('fb-success');
+    const fbSubmitBtn = fbForm ? fbForm.querySelector('button[type="submit"]') : null;
+    if (fbForm) {
+      fbForm.addEventListener('submit', async e => {
+        e.preventDefault();
+        const fbPhone = document.getElementById('fb-phone');
+        const fbPhoneError = document.getElementById('fb-phone-error');
+        if (!fbPhone) return; // Shouldn't happen in form variant
+        function isValidPhone(value) {
+          const d = value.replace(/\D/g, '');
+          return d.length === 10 || (d.length === 11 && d[0] === '1');
+        }
+        function setFbPhoneState(state) {
+          fbPhone.style.borderColor = state === 'error' ? '#f87171' : state === 'ok' ? '#1A531A' : '';
+          fbPhone.style.borderWidth = '1px';
+          fbPhoneError.classList.toggle('hidden', state !== 'error');
+        }
+        if (!isValidPhone(fbPhone.value)) {
+          setFbPhoneState('error');
+          fbPhone.focus();
+          return;
+        }
+        fbSubmitBtn.disabled = true;
+        fbSubmitBtn.textContent = 'Sending…';
+        try {
+          const res = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: new FormData(fbForm)
+          });
+          const data = await res.json();
+          if (data.success) {
+            gtag('event', 'generate_lead', {
+              event_category: 'form',
+              event_label: `fb_form_${product}`
             });
-            const data = await res.json();
-            if (data.success) {
-              gtag('event', 'generate_lead', {
-                event_category: 'form',
-                event_label: `fb_form_${product}`
-              });
-              window.fbq?.('track', 'Lead');
-              fbForm.classList.add('hidden');
-              fbSuccess.classList.remove('hidden');
-              fbSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            } else {
-              throw new Error(data.message || 'Submission failed');
-            }
-          } catch (err) {
-            fbSubmitBtn.disabled = false;
-            fbSubmitBtn.textContent = 'Schedule Service';
-            const errEl = document.getElementById('fb-form-error');
-            if (errEl) { errEl.classList.remove('hidden'); }
+            window.fbq?.('track', 'Lead');
+            fbForm.classList.add('hidden');
+            fbSuccess.classList.remove('hidden');
+            fbSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } else {
+            throw new Error(data.message || 'Submission failed');
           }
-        });
-      }
+        } catch (err) {
+          fbSubmitBtn.disabled = false;
+          fbSubmitBtn.textContent = 'Schedule Service';
+          const errEl = document.getElementById('fb-form-error');
+          if (errEl) { errEl.classList.remove('hidden'); }
+        }
+      });
     }
   </script>
 </body>
