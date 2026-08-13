@@ -16,6 +16,7 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-JGC92F80TL');
+    gtag('config', 'AW-981539480');
   </script>
   <!-- Meta Pixel -->
   <script>
@@ -101,14 +102,6 @@
     "priceRange": "$99-$280",
     "url": "https://natureairduct.com"
   }
-  </script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JGC92F80TL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-JGC92F80TL');
   </script>
 </head>
 <body class="font-body text-brand-charcoal bg-white antialiased">
@@ -896,6 +889,7 @@
           const data = await res.json();
           if (data.success) {
             gtag('event', 'generate_lead', { event_category: 'form', event_label: 'contact_form' });
+            gtag('event', 'conversion', { 'send_to': 'AW-981539480/XMryCKCZgwgQmLWE1AM', 'value': 1.0, 'currency': 'USD' });
             window.fbq?.('track', 'Lead');
             contactForm.classList.add('hidden');
             contactSuccess.classList.remove('hidden');
