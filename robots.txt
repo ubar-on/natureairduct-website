@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /fb.html
+
+Sitemap: https://natureairduct.com/sitemap.xml
